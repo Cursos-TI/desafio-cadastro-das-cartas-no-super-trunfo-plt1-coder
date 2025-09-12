@@ -17,7 +17,7 @@ int Número_de_pontos_turisticos = 14;
 float densidadepopulacional1;
 float pibpercapita1;
 
-// Divindo
+// Divindo a densidade e pib
 
 densidadepopulacional1 = população / area;
 
@@ -55,7 +55,7 @@ int numerodepontos = 30;
 float densidadepopulacional2;
 float pibpercapita2;
 
-// Dividindo 
+// Dividindo a densidade e pib
 
 densidadepopulacional2 = populacao / Area;
 
