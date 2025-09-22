@@ -141,8 +141,56 @@ printf("PIB: Carta %d venceu (%d)\n", (PIB > pib2) ? 1 : 2, (PIB > pib2));
 printf("Pontos Turisticos: Carta %d venceu (%d)\n", (numerodepontosturisticos > numerodepontos2) ? 1 : 2, (numerodepontosturisticos > numerodepontos2)); 
 printf("Densidade Populacional: Carta %d venceu (%d)\n", (densidadepopulacional < densidadepopulacional2) ? 1 : 2, (densidadepopulacional < densidadepopulacional2)); // o que for MENOR vence >
 printf("PIB per Capita: Carta %d venceu (%d)\n", (pibpercapita > pibpercapita2) ? 1 : 2, (pibpercapita > pibpercapita2)); 
-printf("Super Poder: Carta %d venceu (%d)\n", (superpoder > superpoder2) ? 1 : 2, (superpoder > superpoder2)); 
+printf("Super Poder: Carta %d venceu (%d)\n\n", (superpoder > superpoder2) ? 1 : 2, (superpoder > superpoder2)); 
 
+
+// COMPARAÇOES DOS ATRIBUTOS IF E ELSE
+
+printf("==========================================================================================\n\n");
+printf("Agora vamos ver de uma forma mais clara os atributos e quem venceu:\n\n");
+printf("A cidade que tem a maior população é:\n");
+
+if(populacao > populacao2){
+    printf(" Carta 1: %s(%s) (População: %lu)\n\n", Nome_da_cidade, Estado, populacao);
+} else {
+    printf(" Carta 2: %s(%s) (População: %lu)\n\n", nomecidade2, estado2, populacao2);
+}
+printf("A cidade com a maior Área é:\n");
+
+if (area > area2){
+    printf(" Carta 1: %s(%s) (Área = %.2f)\n\n", Nome_da_cidade, Estado, area);
+} else {
+    printf(" Carta 2: %s(%s) (Área = %.2f)\n\n", nomecidade2, estado2, area2);
+}
+
+printf("A cidade com maior PIB é:\n");
+if (PIB > pib2)
+{
+    printf("Carta 1: %s(%s) (PIB: %.3f)\n\n", Nome_da_cidade, Estado, PIB);
+} else {
+    printf("Carta 2: %s(%s) (PIB: %.3f)\n\n", nomecidade2, estado2, pib2);
+}
+
+printf("A cidade com maior número de pontos túristicos é:\n");
+if(numerodepontosturisticos > numerodepontos2){
+    printf("Carta 1: %s(%s) (Número de pontos: %d)\n\n", Nome_da_cidade, Estado, numerodepontosturisticos);
+} else{
+    printf("Carta 2: %s(%s) (Número de pontos: %d)\n\n", nomecidade2, estado2, numerodepontos2);
+}
+
+printf("A cidade com maior densidade populacional  é:\n");
+if(densidadepopulacional > densidadepopulacional2){
+    printf("Carta 1: %s(%s) (Densidade populacional: %.2f)\n\n", Nome_da_cidade, Estado, densidadepopulacional);
+} else{
+    printf("Carta 2: %s(%s) (Densidade populacional: %.2f)\n\n", nomecidade2, estado2, densidadepopulacional2);
+}
+
+printf("A cidade com maior PIB per capita é:\n");
+if(pibpercapita > pibpercapita2){
+    printf("Carta 1: %s(%s) (PIB per capita: %.2f)\n\n", Nome_da_cidade, Estado, pibpercapita);
+} else {
+    printf("Carta 2: %s(%s) (PIB per capita: %.2f)\n\n", nomecidade2, estado2, pibpercapita2);
+}
 
 return 0;
 
